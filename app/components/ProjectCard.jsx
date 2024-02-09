@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { CodeBracketIcon, EyeIcon, VideoCameraIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-import ProjectModal from './projectModal'
+import ProjectModal from './ProjectModal'
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewURL}) => {
     
