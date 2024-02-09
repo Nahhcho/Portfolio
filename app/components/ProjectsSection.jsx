@@ -33,7 +33,7 @@ const ProjectsSection = () => {
     <div className='grid md:grid-cols-1 gap-8 md:gap-12'>
     {
     projectData.map((project) => 
-    <div className='grid md:grid-cols-2 gap-8 md:gap-20'>
+    <div key={project.id} className='grid md:grid-cols-2 gap-8 md:gap-20'>
     <ProjectCard 
     key={project.id} 
     title={project.title}  
