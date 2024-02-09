@@ -21,20 +21,21 @@ const Hero = () => {
                         Hi, I&apos;m Jimmy
                     </span>
                     <br />
-                    <TypeAnimation
-                    sequence={[
-                        // Same substring at the start will only be typed out once, initially
-                        'Full Stack Developer',
-                        1000, // wait 1s before replacing "Mice" with "Hamsters"
-                        'Software Engineer',
-                        1000,
-                        'Student',
-                        1000
-                    ]}
-                    wrapper="span"
-                    speed={50}
-                    repeat={Infinity}
-                    />
+                    <div className='h-[75px] md:h-[90px] lg:h-[120px]'>
+                        <TypeAnimation
+                            sequence={[
+                                'Full Stack Developer',
+                                1000,
+                                'Software Engineer',
+                                1000,
+                                'Student',
+                                1000
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            repeat={Infinity}
+                        />
+                        </div>
                 </h1>
                 
                 <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl'>

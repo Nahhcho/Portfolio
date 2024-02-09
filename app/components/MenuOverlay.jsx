@@ -2,16 +2,24 @@ import React from 'react'
 import NavLink from './NavLink'
 
 const MenuOverlay = () => {
+
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+
   return (
     <ul className='flex md:hidden flex-col pb-4 pt-0 items-center'>
         <li>
-            <NavLink href={'#about'} title={'About'}/>
+            <p onClick={() => scrollToSection('about')} className='text-white text-xl opacity-80 cursor-pointer mb-2'>About</p>
         </li>
         <li>  
-            <NavLink href={'#portfolio'} title={'Projects'}/>
+            <p onClick={() => scrollToSection('portfolio')} className='text-white text-xl opacity-80 cursor-pointer mb-2'>Portfolio</p>
         </li>
         <li>
-            <NavLink href={'#about'} title={'Contact'}/>
+            <p onClick={() => scrollToSection('contact')} className='text-white text-xl opacity-80 cursor-pointer'>Contact</p>
         </li>
     </ul>
   )
