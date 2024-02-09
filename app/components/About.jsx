@@ -40,7 +40,7 @@ const About = () => {
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='xl:text-4xl lg:text-3xl text-2xl mt-5 lg:mt-0 font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg'>
-                   Hello, I'm Jimmy Bonilla, a computer science college student based in Santa Clarita. I love learning and applying my academic knowledge to designing and creating software that solves problems while also utilizing modern technologys.
+                   Hello, I&apos;m Jimmy Bonilla, a computer science college student based in Santa Clarita. I love learning and applying my academic knowledge to designing and creating software that solves problems while also utilizing modern technologys.
                    I spend my time outside of school and work on learning full stack development with technologies and frameworks such as React and Django. I am fueled by the desire to create and design applications that provide value to the lives
                    of myself and others. I have certifications in machine learning and CS50 Web Development, and will recieve my bachelors in computer science in June 2025. I believe that working with other engineers as a team is what allows for real 
                    innovation and creativity. I approach every project as an opportunity to not only learn techinal skills, but also the cooperation and leadership skills that allows for a team to bond and thrive. I am very excited to work with experienced
