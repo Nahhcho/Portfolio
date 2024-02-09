@@ -4,6 +4,14 @@ import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
+    
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
   return (
     <div>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -30,10 +38,12 @@ const Hero = () => {
                 </h1>
                 
                 <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias labore unde veniam et aliquam, accusantium fuga. Optio aperiam provident earum explicabo rem ratione corporis quo, reprehenderit, illo voluptatem ut accusantium.
+                    Responsible and motivated student ready to apply education in the workplace.
                 </p>
                 <div className='mt-[20px] sm:mt-0'>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-500 from hover:bg-slate-200 text-white'>Hire Me</button>
+                    <button onClick={() => scrollToSection('contact')} className='px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-500 from hover:bg-slate-200 text-white'>
+                        Hire Me
+                    </button>
                     <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>Download CV</button>
                 </div>
             </div>

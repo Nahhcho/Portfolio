@@ -1,4 +1,5 @@
 "use client"
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
@@ -9,6 +10,7 @@ const Nav = () => {
 
     const [openMenu, setOpenMenu] = useState(false)
 
+    
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-8 pt-8'>
@@ -30,13 +32,19 @@ const Nav = () => {
             <div className='menu hidden md:block md:w-auto' id='navbar'>
                 <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
                     <li>
-                        <NavLink href={'#about'} title={'About'}/>
-                    </li>
-                    <li>  
-                        <NavLink href={'#portfolio'} title={'Projects'}/>
+                        <ScrollLink className='text-white text-xl opacity-80' to='about' smooth={true} duration={500} offset={-50}>
+                            About
+                        </ScrollLink>
                     </li>
                     <li>
-                        <NavLink href={'#about'} title={'Contact'}/>
+                        <ScrollLink className='text-white text-xl opacity-80' to='portfolio' smooth={true} duration={500} offset={-75}>
+                            Projects
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink className='text-white text-xl opacity-80' to='contact' smooth={true} duration={500} offset={-50}>
+                            Contact
+                        </ScrollLink>
                     </li>
                 </ul>
             </div>

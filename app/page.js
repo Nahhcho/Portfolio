@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ProjectsSection from "./components/ProjectsSection";
+import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +14,9 @@ export default function Home() {
         <Hero />
         <About />
         <ProjectsSection />
+        <EmailSection />
     </div>
-      
+      <Footer />
     </div>
   );
 }
