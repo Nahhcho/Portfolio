@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 z-50'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-8 pt-8'>
-            <Link href={'/'} className='text-3xl md:text-4xl text-white font-semibold'>LOGO</Link>
+            <Link href={'/'} className='text-3xl md:text-4xl text-white font-semibold font-serif'>Jimmy</Link>
             <div className='mobile-menu block md:hidden'>
                 {
                     openMenu ? (

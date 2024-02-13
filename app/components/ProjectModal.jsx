@@ -13,7 +13,7 @@ const ProjectModal = ({ isVisible, onClose }) => {
         <div className='w-[400px] md:w-[600px] flex flex-col '>
             <button onClick={() => onClose()} className='text-white text-xl place-self-end'>x</button>
             <div className='bg-[#212021] rounded flex justify-center p-6'>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nwJK-jo91vA?si=HpnGsqKwVrHUVVru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VSJdaoJ_VUw?si=30SICLhdTC4wFcO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
         </div>
