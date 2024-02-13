@@ -42,10 +42,9 @@ const Hero = () => {
                     Responsible and motivated student ready to apply education in the workplace.
                 </p>
                 <div className='mt-[20px] sm:mt-0'>
-                    <button onClick={() => scrollToSection('contact')} className='px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-500 from hover:bg-slate-200 text-white'>
-                        Hire Me
+                    <button onClick={() => scrollToSection('contact')} className='mt-3 px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-500 from hover:bg-slate-200 text-white'>
+                        Contact Me!
                     </button>
-                    <button className='px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-800 text-white border border-white mt-3'>Download CV</button>
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
